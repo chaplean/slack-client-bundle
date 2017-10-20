@@ -1,0 +1,13 @@
+parameters:
+    chaplean_slack_client.api.access_token: '%chaplean_slack.access_token%'
+    chaplean_slack_client.api.url: 'https://slack.com/api/'
+
+services:
+    slack_api:
+        class: Chaplean\Bundle\SlackClientBundle\Api\SlackApi
+        arguments:
+            - '@guzzle.client.slack_api'
+            - '@event_dispatcher'
+            - '%chaplean_slack_client.api.url%'
+            - '%chaplean_slack_client.api.access_token%'
+
