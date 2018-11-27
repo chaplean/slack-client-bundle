@@ -19,12 +19,6 @@
             "Tests\\Chaplean\\Bundle\\SlackClientBundle\\": "Tests"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://satis.chaplean.com"
-        }
-    ],
     "require": {
         "php": ">=7.0.8",
         "chaplean/rest-client-bundle": "^1.0",
@@ -35,12 +29,12 @@
         "symfony/yaml": "^2.8 || ^3.0 || ^4.0"
     },
     "require-dev": {
-        "chaplean/codeship-scripts": "^1.0",
         "chaplean/coding-standard": "^1.1",
         "mockery/mockery": "dev-master",
         "phpunit/phpunit": "^6.3",
         "symfony/http-kernel": "^2.8 || ^3.0 || ^4.0",
-        "symfony/var-dumper": "^2.8 || ^3.0 || ^4.0"
+        "symfony/var-dumper": "^2.8 || ^3.0 || ^4.0",
+        "chaplean/continuous-integration-scripts": "^2.1"
     },
     "scripts": {
         "post-install-cmd": [
